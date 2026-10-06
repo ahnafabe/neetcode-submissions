@@ -1,0 +1,11 @@
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        #sort each string alphabetically
+        s_sorted = ''.join(sorted(s))
+        t_sorted = ''.join(sorted(t))
+        #check if they are duplicate
+        if s_sorted == t_sorted:
+            return True
+        else:
+            return False
+        
